@@ -9,7 +9,7 @@ import React from 'react';
             timesClicked:0
         }
     }
-    handleIncrement = () =>{
+    handleClick = () =>{
         this.setState(previousState =>{
             return{
                 timesClicked: previousState.timesClicked + 1
@@ -18,7 +18,7 @@ import React from 'react';
     }
     render(){
         return(
-            <button onClick={this.handleIncrement}>{this.state.timesClicked}</button>
+            <button onClick={this.handleClick}>{this.state.timesClicked}</button>
         );
     }
 }
