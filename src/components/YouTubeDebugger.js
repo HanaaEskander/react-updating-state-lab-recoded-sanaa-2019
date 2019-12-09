@@ -28,8 +28,7 @@ import React from 'react';
     handleResoluation = () =>{
         this.setState({
             settings:{
-               
-                video:{
+               video:{
                     resolution:'720p'
                 }
                 
@@ -40,8 +39,10 @@ import React from 'react';
     render(){
         return(
             <div>
-                <button className="bitrate" onClick={this.handleBitrate}>{this.state.settings.bitrate}</button>
-                <button className="resolution" onClick={this.handleResoluation}>{this.state.settings.video.resolution}</button>
+                <button className="bitrate" onClick={this.handleBitrate}>
+                {this.state.settings.bitrate}</button>
+                <button className="resolution" onClick={this.handleResoluation}>
+                {this.state.settings.video.resolution}</button>
             </div>
         );
     }
