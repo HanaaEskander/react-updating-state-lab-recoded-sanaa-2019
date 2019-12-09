@@ -10,9 +10,9 @@ import React from 'react';
         }
     }
     handleClick = () =>{
-        this.setState(previousState =>{
+        this.setState(lastValue=>{
             return{
-                timesClicked: previousState.timesClicked + 1
+                timesClicked: lastValue.timesClicked + 1
             }
         })
     }
