@@ -18,7 +18,8 @@ import React from 'react';
     }
     render(){
         return(
-            <button onClick={this.handleClick}>{this.state.timesClicked}</button>
+            <button onClick={this.handleClick}>
+            {this.state.timesClicked}</button>
         );
     }
 }
