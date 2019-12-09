@@ -19,8 +19,9 @@ import React from 'react';
     handleBitrate = () =>{
         this.setState({
             settings:{
+              bitrate: 12
                 ...this.state.settings,
-                bitrate: 12
+                
             }
         })
     }
